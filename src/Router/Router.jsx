@@ -16,6 +16,7 @@ const myRoute = createBrowserRouter([
       },
       {
         path: "/products",
+        loader : ()=> fetch('https://dummyjson.com/products'),
         element: <Products></Products>,
       },
       {
@@ -23,7 +24,7 @@ const myRoute = createBrowserRouter([
         element : <About></About>
       },
       {
-        path : '/contact',
+        path : '/contact', 
         element : <Contact></Contact>
       }
     ],

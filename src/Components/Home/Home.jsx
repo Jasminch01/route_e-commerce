@@ -1,7 +1,7 @@
 
 const Home = () => {
     return (
-        <div>
+        <div className="w-[80%] mx-auto">
             <p>Home</p>
         </div>
     );

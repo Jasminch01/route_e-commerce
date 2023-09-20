@@ -1,7 +1,7 @@
 
 const Contact = () => {
     return (
-        <div>
+        <div className="w-[80%] mx-auto">
             <p>Contact</p>
         </div>
     );
