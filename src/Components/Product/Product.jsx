@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
-  const {id, title, price, stock, rating, images,} = product;
+  const {id, title, price, stock, rating, images, thumbnail} = product;
   return (
     <div className="bg-slate-100 flex flex-col p-6 rounded-lg space-y-3">
-      <img className="w-full h-80 rounded-lg" src={images[2]} alt="" />
+      <img className="w-full h-80 rounded-lg" src={images[2]? images[2] : thumbnail} alt="" />
       <div className="flex-grow">
         <p className="text-3xl font-medium">{title}</p>
         <p className="text-xl">Stock : {stock}</p>

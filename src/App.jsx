@@ -1,5 +1,6 @@
 import { Outlet, useNavigation } from "react-router-dom";
 import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const navigation = useNavigation();
@@ -10,7 +11,7 @@ function App() {
         <div>
           <img className="w-12" src="../public/vite.svg" alt="" />
         </div>
-        <div>
+        <div className="">
           <Header></Header>
         </div>
       </div>
@@ -20,6 +21,7 @@ function App() {
         navigation.state === 'loading'? <div className="flex justify-center items-center h-screen"> <span className="loading loading-spinner text-success "></span> </div> :
       <Outlet></Outlet>
       }
+      <Footer></Footer>
     </div>
   );
 }
